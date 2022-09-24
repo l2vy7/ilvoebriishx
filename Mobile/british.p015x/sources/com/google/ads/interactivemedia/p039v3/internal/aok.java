@@ -1,0 +1,441 @@
+package com.google.ads.interactivemedia.p039v3.internal;
+
+import android.content.Context;
+import com.google.android.exoplayer2.DefaultRenderersFactory;
+import com.google.android.exoplayer2.SimpleExoPlayer;
+import com.google.android.exoplayer2.source.ProgressiveMediaSource;
+import com.ironsource.mediationsdk.utils.IronSourceConstants;
+import java.util.concurrent.TimeUnit;
+
+/* renamed from: com.google.ads.interactivemedia.v3.internal.aok */
+/* compiled from: IMASDK */
+public final class aok {
+
+    /* renamed from: a */
+    public static final aod<Boolean> f15485a;
+
+    /* renamed from: b */
+    public static final aod<String> f15486b = aod.m14448l("gads:msa:experiments:incapi:trusted_cert", "308204433082032ba003020102020900c2e08746644a308d300d06092a864886f70d01010405003074310b3009060355040613025553311330110603550408130a43616c69666f726e6961311630140603550407130d4d6f756e7461696e205669657731143012060355040a130b476f6f676c6520496e632e3110300e060355040b1307416e64726f69643110300e06035504031307416e64726f6964301e170d3038303832313233313333345a170d3336303130373233313333345a3074310b3009060355040613025553311330110603550408130a43616c69666f726e6961311630140603550407130d4d6f756e7461696e205669657731143012060355040a130b476f6f676c6520496e632e3110300e060355040b1307416e64726f69643110300e06035504031307416e64726f696430820120300d06092a864886f70d01010105000382010d00308201080282010100ab562e00d83ba208ae0a966f124e29da11f2ab56d08f58e2cca91303e9b754d372f640a71b1dcb130967624e4656a7776a92193db2e5bfb724a91e77188b0e6a47a43b33d9609b77183145ccdf7b2e586674c9e1565b1f4c6a5955bff251a63dabf9c55c27222252e875e4f8154a645f897168c0b1bfc612eabf785769bb34aa7984dc7e2ea2764cae8307d8c17154d7ee5f64a51a44a602c249054157dc02cd5f5c0e55fbef8519fbe327f0b1511692c5a06f19d18385f5c4dbc2d6b93f68cc2979c70e18ab93866b3bd5db8999552a0e3b4c99df58fb918bedc182ba35e003c1b4b10dd244a8ee24fffd333872ab5221985edab0fc0d0b145b6aa192858e79020103a381d93081d6301d0603551d0e04160414c77d8cc2211756259a7fd382df6be398e4d786a53081a60603551d2304819e30819b8014c77d8cc2211756259a7fd382df6be398e4d786a5a178a4763074310b3009060355040613025553311330110603550408130a43616c69666f726e6961311630140603550407130d4d6f756e7461696e205669657731143012060355040a130b476f6f676c6520496e632e3110300e060355040b1307416e64726f69643110300e06035504031307416e64726f6964820900c2e08746644a308d300c0603551d13040530030101ff300d06092a864886f70d010104050003820101006dd252ceef85302c360aaace939bcff2cca904bb5d7a1661f8ae46b2994204d0ff4a68c7ed1a531ec4595a623ce60763b167297a7ae35712c407f208f0cb109429124d7b106219c084ca3eb3f9ad5fb871ef92269a8be28bf16d44c8d9a08e6cb2f005bb3fe2cb96447e868e731076ad45b33f6009ea19c161e62641aa99271dfd5228c5c587875ddb7f452758d661f6cc0cccb7352e424cc4365c523532f7325137593c4ae341f4db41edda0d0b1071a7c440f0fe9ea01cb627ca674369d084bd2fd911ff06cdbf2cfa10dc0f893ae35762919048c7efc64c7144178342f70581c9de573af55b390dd7fdb9418631895d5f759f30112687ff621410c069308a");
+
+    /* renamed from: c */
+    public static final aom<Boolean> f15487c = aon.f15503a;
+
+    /* renamed from: d */
+    public static final aod<Boolean> f15488d;
+
+    /* renamed from: e */
+    public static final aod<Long> f15489e = aod.m14447k("gads:gestures:task_timeout", SimpleExoPlayer.DEFAULT_DETACH_SURFACE_TIMEOUT_MS);
+
+    /* renamed from: f */
+    public static final aod<Boolean> f15490f;
+
+    /* renamed from: g */
+    public static final aod<Boolean> f15491g;
+
+    /* renamed from: h */
+    public static final aod<Boolean> f15492h;
+
+    /* renamed from: i */
+    public static final aod<Boolean> f15493i;
+
+    /* renamed from: j */
+    public static final aod<Boolean> f15494j;
+
+    /* renamed from: k */
+    public static final aod<String> f15495k = aod.m14448l("gads:gestures:pk", "");
+
+    /* renamed from: l */
+    public static final aod<Boolean> f15496l;
+
+    /* renamed from: m */
+    public static final aod<Boolean> f15497m;
+
+    /* renamed from: n */
+    public static final aod<Boolean> f15498n;
+
+    /* renamed from: o */
+    public static final aod<Boolean> f15499o;
+
+    static {
+        aod.m14448l("gads:sdk_core_location:client:html", "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/production/sdk-core-v40-impl.html");
+        aod.m14448l("gads:active_view_location:html", "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/production/sdk-core-v40-impl.html");
+        aom<Boolean> aom = aoo.f15504a;
+        aod.m14446j("gads:http_url_connection_factory:timeout_millis", 10000);
+        aod.m14448l("gads:video_exo_player:version", "3");
+        aod.m14446j("gads:video_exo_player:connect_timeout", 8000);
+        aod.m14446j("gads:video_exo_player:read_timeout", 8000);
+        aod.m14446j("gads:video_exo_player:loading_check_interval", ProgressiveMediaSource.DEFAULT_LOADING_CHECK_INTERVAL_BYTES);
+        aod.m14446j("gads:video_exo_player:exo_player_precache_limit", Integer.MAX_VALUE);
+        aod.m14446j("gads:video_exo_player:byte_buffer_precache_limit", Integer.MAX_VALUE);
+        aod.m14446j("gads:video_exo_player_socket_receive_buffer_size", 0);
+        aod.m14446j("gads:video_exo_player:min_retry_count", -1);
+        Boolean bool = Boolean.TRUE;
+        aod.m14444g(1, "gads:video_exo_player:fmp4_extractor_enabled", bool);
+        Boolean bool2 = Boolean.FALSE;
+        aod.m14444g(1, "gads:video_exo_player:use_play_back_info_for_should_start_play_back", bool2);
+        aod.m14444g(1, "gads:video_exo_player:treat_load_exception_as_non_fatal", bool2);
+        aod.m14446j("gads:video_stream_cache:limit_count", 5);
+        aod.m14446j("gads:video_stream_cache:limit_space", 8388608);
+        aod.m14446j("gads:video_stream_exo_cache:buffer_size", 8388608);
+        aod.m14447k("gads:video_stream_cache:limit_time_sec", 300);
+        aod.m14447k("gads:video_stream_cache:notify_interval_millis", 125);
+        aod.m14446j("gads:video_stream_cache:connect_timeout_millis", 10000);
+        aod.m14448l("gads:video:metric_frame_hash_times", "");
+        aod.m14447k("gads:video:metric_frame_hash_time_leniency", 500);
+        aod.m14444g(1, "gads:video:force_watermark", bool2);
+        aod.m14447k("gads:video:surface_update_min_spacing_ms", 1000);
+        aod.m14444g(1, "gads:video:spinner:enabled", bool2);
+        aod.m14446j("gads:video:spinner:scale", 4);
+        aod.m14447k("gads:video:spinner:jank_threshold_ms", 50);
+        aod.m14444g(1, "gads:video:aggressive_media_codec_release", bool2);
+        aod.m14444g(1, "gads:memory_bundle:debug_info", bool2);
+        aod.m14448l("gads:video:codec_query_mime_types", "");
+        aod.m14446j("gads:video:codec_query_minimum_version", 16);
+        aod.m14448l("gad:mraid:url_banner", "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/production/mraid/v3/mraid_app_banner.js");
+        aod.m14448l("gad:mraid:url_expanded_banner", "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/production/mraid/v3/mraid_app_expanded_banner.js");
+        aod.m14448l("gad:mraid:url_interstitial", "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/production/mraid/v3/mraid_app_interstitial.js");
+        aod.m14448l("gad:mraid:version", "3.0");
+        aod.m14444g(1, "gads:mraid:expanded_interstitial_fix", bool2);
+        aod.m14444g(1, "gads:mraid:initial_size_fallback", bool2);
+        aod.m14446j("gads:content_vertical_fingerprint_number", 100);
+        aod.m14446j("gads:content_vertical_fingerprint_bits", 23);
+        aod.m14446j("gads:content_vertical_fingerprint_ngram", 3);
+        aod.m14448l("gads:content_fetch_view_tag_id", "googlebot");
+        aod.m14448l("gads:content_fetch_exclude_view_tag", "none");
+        aod.m14444g(1, "gads:content_fetch_disable_get_title_from_webview", bool2);
+        aod.m14444g(1, "gads:content_fetch_enable_new_content_score", bool2);
+        aod.m14444g(1, "gads:content_fetch_enable_serve_once", bool2);
+        aod.m14444g(1, "gads:sai:enabled", bool);
+        aod.m14448l("gads:sai:click_ping_schema_v2", "^[^?]*(/aclk\\?|/pcs/click\\?).*");
+        aod.m14448l("gads:sai:impression_ping_schema_v2", "^[^?]*(/adview|/pcs/view).*");
+        aod.m14444g(1, "gads:sai:using_macro:enabled", bool2);
+        aod.m14448l("gads:sai:ad_event_id_macro_name", "[gw_fbsaeid]");
+        aod.m14447k("gads:sai:timeout_ms", -1);
+        aod.m14446j("gads:sai:scion_thread_pool_size", 5);
+        aod.m14444g(1, "gads:sai:app_measurement_enabled3", bool2);
+        aod.m14446j("gads:sai:app_measurement_min_client_dynamite_version", 20290);
+        aod.m14444g(1, "gads:sai:force_through_reflection", bool);
+        aod.m14444g(1, "gads:sai:gmscore_availability_check_disabled", bool2);
+        aod.m14444g(1, "gads:sai:logging_disabled_for_drx", bool2);
+        aod.m14444g(1, "gads:sai:app_measurement_npa_enabled", bool2);
+        aod.m14444g(1, "gads:idless:idless_disables_attestation", bool);
+        aod.m14444g(1, "gads:idless:app_measurement_idless_enabled", bool);
+        aod.m14444g(1, "gads:sai:server_side_npa:disable_writing", bool2);
+        aod.m14444g(1, "gads:sai:server_side_npa:enabled", bool2);
+        aod.m14447k("gads:sai:server_side_npa:ttl", TimeUnit.DAYS.toMillis(90));
+        aod.m14448l("gads:sai:server_side_npa:shared_preference_key_list", "{  \"__default__\": [    \"IABTCF_TCString\"  ],  \"mobileads_consent\": [    \"consent_string\"  ]}");
+        aod.m14444g(1, "gads:idless:internal_state_enabled", bool);
+        aod.m14444g(1, "gads:idless:idless_disables_offline_ads_signalling", bool);
+        aod.m14448l("gads:idless:cookie_modification", "=; Max-Age=-1; path=/; domain=.doubleclick.net");
+        aod.m14444g(1, "gads:interstitial:app_must_be_foreground:enabled", bool2);
+        aod.m14444g(1, "gads:interstitial:foreground_report:enabled", bool2);
+        aod.m14444g(1, "gads:interstitial:default_immersive", bool2);
+        aod.m14446j("gads:show_interstitial_with_context:min_version", 999999999);
+        aod.m14444g(1, "gads:webview:error_web_response:enabled", bool2);
+        aod.m14444g(1, "gads:webview:set_fixed_text_zoom", bool2);
+        aod.m14444g(1, "gads:webviewgone:kill_process:enabled", bool2);
+        aod.m14444g(1, "gads:webviewgone:new_onshow:enabled", bool2);
+        aod.m14448l("gads:webview_cookie_url", "googleads.g.doubleclick.net");
+        aod.m14444g(1, "gads:new_rewarded_ad:enabled", bool);
+        aod.m14444g(1, "gads:rewarded:adapter_initialization_enabled", bool2);
+        aod.m14444g(1, "gads:rewarded:ad_metadata_enabled", bool2);
+        aod.m14447k("gads:app_activity_tracker:notify_background_listeners_delay_ms", 500);
+        aod.m14447k("gads:app_activity_tracker:app_session_timeout_ms", TimeUnit.MINUTES.toMillis(5));
+        aod.m14444g(1, "gads:adid_values_in_adrequest:enabled", bool2);
+        aod.m14447k("gads:adid_values_in_adrequest:timeout", SimpleExoPlayer.DEFAULT_DETACH_SURFACE_TIMEOUT_MS);
+        aod.m14444g(1, "gads:disable_adid_values_in_ms", bool2);
+        aod.m14447k("gads:ad_overlay:delay_page_close_timeout_ms", DefaultRenderersFactory.DEFAULT_ALLOWED_VIDEO_JOINING_TIME_MS);
+        aod.m14444g(1, "gads:custom_close_blocking:enabled", bool2);
+        aod.m14444g(1, "gads:disabling_closable_area:enabled", bool2);
+        aod.m14444g(1, "gads:use_system_ui_for_fullscreen:enabled", bool2);
+        aod.m14444g(1, "gads:ad_overlay:collect_cutout_info:enabled", bool2);
+        aod.m14448l("gads:spherical_video:vertex_shader", "");
+        aod.m14448l("gads:spherical_video:fragment_shader", "");
+        aod.m14444g(1, "gads:include_local_global_rectangles", bool2);
+        aod.m14447k("gads:position_watcher:throttle_ms", 200);
+        aod.m14447k("gads:position_watcher:scroll_aware_throttle_ms", 33);
+        aod.m14444g(1, "gads:position_watcher:enable_scroll_aware_ads", bool2);
+        aod.m14444g(1, "gads:position_watcher:send_scroll_data", bool2);
+        aod.m14444g(1, "gads:gen204_signals:enabled", bool2);
+        aod.m14444g(1, "gads:extra_sdk_versions_for_crash_reports:enabled", bool);
+        aod.m14448l("gads:logged_adapter_version_classes", "");
+        aod.m14447k("gads:rtb_v1_1:signal_timeout_ms", 1000);
+        aod.m14448l("gads:rtb_logging:regex", "(?!)");
+        aod.m14444g(1, "gads:presentation_error:urls_enabled", bool);
+        aod.m14444g(1, "gads:rtb_interstitial:use_fullscreen_monitor", bool);
+        aod.m14444g(1, "gads:native_required_assets:enabled", bool2);
+        aod.m14444g(1, "gads:native_required_assets:check_inner_mediaview:enabled", bool);
+        aod.m14446j("gads:native_ad_options_rtb:min_version", 999999999);
+        aod.m14444g(1, "gads:track_view_next_runloop:enabled", bool2);
+        aod.m14444g(1, "gads:native_required_assets:viewability:enabled", bool2);
+        aod.m14446j("gads:adapter_initialization:min_sdk_version", 15301000);
+        aod.m14447k("gads:adapter_initialization:timeout", 30);
+        aod.m14447k("gads:adapter_initialization:cld_timeout", 10);
+        aod.m14444g(1, "gads:additional_video_csi:enabled", bool2);
+        aod.m14444g(1, "gads:csi:enabled_per_sampling", bool2);
+        aod.m14444g(1, "gads:always_set_transfer_listener:enabled", bool2);
+        aod.m14444g(1, "gads:initialization_csi:enabled", bool2);
+        aod.m14444g(1, "gads:msa:experiments:enabled", bool2);
+        aod.m14444g(1, "gads:msa:experiments:ps:enabled", bool2);
+        aod.m14444g(1, "gads:msa:experiments:fb:enabled", bool);
+        aod.m14444g(1, "gads:msa:experiments:ps:er", bool);
+        aod.m14446j("gads:gestures:a2:enabled", 0);
+        aod.m14444g(1, "gads:msa:experiments:a2", bool2);
+        aod.m14444g(1, "gads:msa:experiments:log", bool);
+        aod.m14444g(1, "gads:msa:experiments:vfb", bool);
+        f15485a = aod.m14444g(1, "gads:msa:experiments:incapi:enabled", bool2);
+        aod.m14444g(1, "gads:gestures:clearTd:enabled", bool2);
+        f15488d = aod.m14444g(1, "gads:gestures:errorlogging:enabled", bool2);
+        f15490f = aod.m14444g(1, "gads:gestures:asig:enabled", bool2);
+        aod.m14444g(1, "gads:gestures:ans:enabled", bool2);
+        f15491g = aod.m14444g(1, "gads:gestures:tos:enabled", bool2);
+        f15492h = aod.m14444g(1, "gads:gestures:brt:enabled", bool);
+        f15493i = aod.m14444g(1, "gads:gestures:fpi:enabled", bool2);
+        aod.m14444g(1, "gads:signal:app_permissions:disabled", bool2);
+        f15494j = aod.m14444g(1, "gads:gestures:hpk:enabled", bool);
+        f15496l = aod.m14444g(1, "gads:gestures:bs:enabled", bool);
+        f15497m = aod.m14444g(1, "gads:gestures:check_initialization_thread:enabled", bool2);
+        aod.m14444g(1, "gads:gestures:init_new_thread:enabled", bool);
+        f15498n = aod.m14444g(1, "gads:gestures:pds:enabled", bool);
+        aod.m14446j("gads:gestures:as2percentage", 0);
+        f15499o = aod.m14444g(1, "gads:gestures:ns:enabled", bool);
+        aod.m14444g(1, "gads:gestures:vdd:enabled", bool2);
+        aod.m14444g(1, "gads:native:asset_view_touch_events", bool2);
+        aod.m14444g(1, "gads:native:set_touch_listener_on_asset_views", bool);
+        aod.m14444g(1, "gads:ais:enabled", bool);
+        aod.m14444g(1, "gads:stav:enabled", bool2);
+        aod.m14444g(1, "gads:spam:impression_ui_idle:enable", bool2);
+        anx.m14426a().mo14152b(aod.m14448l("gads:sdk_core_constants:experiment_id", (String) null));
+        aod.m14448l("gads:sdk_core_constants:caps", "");
+        aod.m14444g(1, "gads:js_flags:disable_phenotype", bool2);
+        aod.m14448l("gads:native:engine_url_with_protocol", "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/native_ads.html");
+        aod.m14448l("gads:native:video_url_with_protocol", "https://imasdk.googleapis.com/admob/sdkloader/native_video.html");
+        aod.m14444g(1, "gads:native:get_native_ad_view_signals", bool2);
+        aod.m14446j("gads:native_video_load_timeout", 10);
+        aod.m14444g(1, "gads:omid:native_video_ad_user_action_event:enabled", bool2);
+        aod.m14448l("gads:ad_choices_content_description", "Ad Choices Icon");
+        aod.m14444g(1, "gads:enable_singleton_broadcast_receiver", bool2);
+        aod.m14444g(1, "gads:native:media_view_match_parent:enabled", bool2);
+        aod.m14444g(1, "gads:video:restrict_inside_web_view:enabled", bool2);
+        aod.m14444g(1, "gads:native:count_impression_for_assets", bool2);
+        aod.m14444g(1, "gads:fluid_ad:use_wrap_content_height", bool2);
+        aod.m14444g(1, "gads:rtb_v1_1:fetch_app_settings_using_cld:enabled", bool);
+        aod.m14444g(1, "gads:get_request_signals_cld:enabled", bool);
+        aod.m14444g(1, "gads:get_request_signals_common_cld:enabled", bool);
+        aod.m14444g(1, "gads:rtb_v1_1:use_manifest_appid_cld:enabled", bool);
+        aod.m14447k("gads:fetch_app_settings_using_cld:refresh_interval_ms", 7200000);
+        aod.m14447k("gads:parental_controls:timeout", SimpleExoPlayer.DEFAULT_DETACH_SURFACE_TIMEOUT_MS);
+        aod.m14446j("gads:cache:ad_request_timeout_millis", IronSourceConstants.INTERSTITIAL_DAILY_CAPPED);
+        aod.m14446j("gads:cache:max_concurrent_downloads", 10);
+        aod.m14444g(1, "gads:cache:downloader_use_high_priority", bool2);
+        aod.m14447k("gads:cache:javascript_timeout_millis", DefaultRenderersFactory.DEFAULT_ALLOWED_VIDEO_JOINING_TIME_MS);
+        aod.m14444g(1, "gads:cache:bind_on_foreground", bool2);
+        aod.m14444g(1, "gads:cache:bind_on_init", bool2);
+        aod.m14444g(1, "gads:cache:bind_on_request", bool2);
+        aod.m14447k("gads:cache:bind_on_request_keep_alive", TimeUnit.SECONDS.toMillis(30));
+        aod.m14444g(1, "gads:cache:use_cache_data_source", bool2);
+        aod.m14444g(1, "gads:cache:connection_per_read", bool2);
+        aod.m14447k("gads:cache:connection_timeout", DefaultRenderersFactory.DEFAULT_ALLOWED_VIDEO_JOINING_TIME_MS);
+        aod.m14447k("gads:cache:read_only_connection_timeout", DefaultRenderersFactory.DEFAULT_ALLOWED_VIDEO_JOINING_TIME_MS);
+        aod.m14444g(1, "gads:cache:read_inner_data_source_if_gcache_miss", bool2);
+        aod.m14444g(1, "gads:cache:read_inner_data_source_if_gcache_not_downloaded", bool2);
+        aod.m14444g(1, "gads:cache:function_call_timeout_v1:enabled", bool2);
+        aod.m14447k("gads:cache:function_call_timeout", DefaultRenderersFactory.DEFAULT_ALLOWED_VIDEO_JOINING_TIME_MS);
+        aod.m14444g(1, "gads:http_assets_cache:enabled", bool2);
+        aod.m14448l("gads:http_assets_cache:regex", "(?i)https:\\/\\/(tpc\\.googlesyndication\\.com\\/(.*)|lh\\d+\\.googleusercontent\\.com\\/(.*))");
+        aod.m14446j("gads:http_assets_cache:time_out", 100);
+        aod.m14444g(1, "gads:chrome_custom_tabs_browser:enabled", bool2);
+        aod.m14444g(1, "gads:chrome_custom_tabs:disabled", bool2);
+        aod.m14444g(1, "gads:chrome_custom_tabs_browser_v2:enabled", bool2);
+        aod.m14444g(1, "gads:cct_v2_connection:enabled", bool2);
+        aod.m14444g(1, "gads:cct_v2_direct_launch:enabled", bool2);
+        aod.m14444g(1, "gads:chrome_custom_tabs_for_native_ads:enabled", bool2);
+        aod.m14444g(1, "gad:cct_v2_beta:enabled", bool2);
+        aod.m14448l("gad:publisher_testing:cct_v2:enabled_list", "");
+        aod.m14444g(2, "CHROME_CUSTOM_TAB_OPT_OUT", bool2);
+        aod.m14447k("gads:debug_hold_gesture:time_millis", SimpleExoPlayer.DEFAULT_DETACH_SURFACE_TIMEOUT_MS);
+        aod.m14448l("gads:drx_debug:debug_device_linking_url", "https://www.google.com/dfp/linkDevice");
+        aod.m14448l("gads:drx_debug:in_app_preview_status_url", "https://www.google.com/dfp/inAppPreview");
+        aod.m14448l("gads:drx_debug:debug_signal_status_url", "https://www.google.com/dfp/debugSignals");
+        aod.m14448l("gads:drx_debug:send_debug_data_url", "https://www.google.com/dfp/sendDebugData");
+        aod.m14446j("gads:drx_debug:timeout_ms", 5000);
+        aod.m14446j("gad:pixel_dp_comparision_multiplier", 1);
+        aod.m14444g(1, "gad:interstitial_notify_publisher_without_delay", bool2);
+        aod.m14444g(1, "gad:interstitial_for_multi_window", bool2);
+        aod.m14444g(1, "gad:interstitial_ad_stay_active_in_multi_window", bool2);
+        aod.m14444g(1, "gad:interstitial_multi_window_method", bool2);
+        aod.m14446j("gad:interstitial:close_button_padding_dip", 0);
+        aod.m14444g(1, "gads:clearcut_logging:enabled", bool2);
+        aod.m14444g(1, "gads:clearcut_logging:write_to_file", bool2);
+        aod.m14444g(1, "gad:publisher_testing:force_local_request:enabled", bool);
+        aod.m14448l("gad:publisher_testing:force_local_request:enabled_list", "");
+        aod.m14448l("gad:publisher_testing:force_local_request:disabled_list", "");
+        aod.m14446j("gad:http_redirect_max_count:times", 8);
+        aod.m14444g(1, "gads:omid:enabled", bool);
+        aod.m14446j("gads:omid:destroy_webview_delay", 1000);
+        aod.m14444g(1, "gads:omid_1_3_activate:enabled", bool2);
+        aod.m14444g(1, "gads:omid_1_3_create_html_session:enabled", bool2);
+        aod.m14444g(1, "gads:omid_1_3_create_js_session:enabled", bool2);
+        aod.m14444g(1, "gads:omid_1_3_friendly_obstruction:enabled", bool2);
+        aod.m14444g(1, "gads:omid_1_3_fire_loaded_event:enabled", bool2);
+        aod.m14444g(1, "gads:omid_use_admob_impl_dependency:enabled", bool2);
+        aod.m14444g(1, "gads:nonagon:banner:enabled", bool);
+        aod.m14448l("gads:nonagon:banner:ad_unit_exclusions", "(?!)");
+        aod.m14444g(1, "gads:nonagon:app_open:enabled", bool);
+        aod.m14446j("gads:app_open_beta:min_version", 999999999);
+        aod.m14446j("gads:app_open_ad_open_beta_api:min_version", 202490999);
+        aod.m14444g(1, "gads:nonagon:app_open_app_switch_signal:enabled", bool2);
+        aod.m14448l("gads:nonagon:app_open:ad_unit_exclusions", "(?!)");
+        aod.m14444g(1, "gads:nonagon:interstitial:enabled", bool);
+        aod.m14448l("gads:nonagon:interstitial:ad_unit_exclusions", "(?!)");
+        aod.m14444g(1, "gads:nonagon:rewardedvideo:enabled", bool);
+        aod.m14444g(1, "gads:nonagon:mobile_ads_setting_manager:enabled", bool);
+        aod.m14448l("gads:nonagon:rewardedvideo:ad_unit_exclusions", "(?!)");
+        aod.m14444g(1, "gads:nonagon:banner:check_dp_size", bool);
+        aod.m14444g(1, "gads:nonagon:rewarded:load_multiple_ads", bool);
+        aod.m14444g(1, "gads:nonagon:return_no_fill_error_code", bool2);
+        aod.m14444g(1, "gads:nonagon:continue_on_no_fill", bool2);
+        aod.m14444g(1, "gads:nonagon:separate_timeout:enabled", bool);
+        aod.m14446j("gads:nonagon:request_timeout:seconds", 60);
+        aod.m14444g(1, "gads:nonagon:banner_recursive_renderer", bool2);
+        aod.m14444g(1, "gads:nonagon:app_stats_lock:enabled", bool2);
+        aod.m14444g(1, "gads:nonagon:app_stats_main_thread:enabled", bool2);
+        aod.m14444g(1, "gads:uri_query_to_map_bg_thread:enabled", bool2);
+        aod.m14448l("gads:uri_query_to_map_bg_thread:types", "/result");
+        aod.m14446j("gads:uri_query_to_map_bg_thread:min_length", 1000);
+        aod.m14444g(1, "gads:nonagon:active_view_gmsg_background_thread:enabled", bool);
+        aod.m14444g(1, "gads:active_view_gmsg_separate_pool:enabled", bool);
+        aod.m14444g(1, "gads:signals:ad_id_info:enabled", bool2);
+        aod.m14444g(1, "gads:signals:app_index:enabled", bool2);
+        aod.m14444g(1, "gads:signals:attestation_token:enabled", bool2);
+        aod.m14444g(1, "gads:signals:cache:enabled", bool2);
+        aod.m14444g(1, "gads:signals:doritos:enabled", bool2);
+        aod.m14444g(1, "gads:signals:doritos:v1:enabled", bool2);
+        aod.m14444g(1, "gads:signals:doritos:v2:immediate:enabled", bool2);
+        aod.m14444g(1, "gads:signals:parental_control:enabled", bool2);
+        aod.m14444g(1, "gads:signals:video_decoder:enabled", bool2);
+        aod.m14444g(1, "gads:signals:banner_hardware_acceleration:enabled", bool2);
+        aod.m14444g(1, "gads:signals:native_hardware_acceleration:enabled", bool2);
+        aod.m14444g(1, "gads:attestation_token:enabled", bool2);
+        aod.m14447k("gads:mobius_linking:sdk_side_cooldown_time_threshold:ms", 3600000);
+        aod.m14446j("gads:adoverlay:b68684796:targeting_sdk:lower_bound", 27);
+        aod.m14446j("gads:adoverlay:b68684796:targeting_sdk:upper_bound", 26);
+        aod.m14446j("gads:adoverlay:b68684796:sdk_int:lower_bound", 27);
+        aod.m14446j("gads:adoverlay:b68684796:sdk_int:upper_bound", 26);
+        aod.m14444g(1, "gads:consent:shared_preference_reading:enabled", bool);
+        aod.m14444g(1, "gads:consent:iab_consent_info:enabled", bool);
+        aod.m14444g(1, "gads:fc_consent:shared_preference_reading:enabled", bool);
+        aod.m14448l("gads:sp:json_string", "");
+        aod.m14444g(1, "gads:nativeads:image:sample:enabled", bool);
+        aod.m14446j("gads:nativeads:image:sample:pixels", ProgressiveMediaSource.DEFAULT_LOADING_CHECK_INTERVAL_BYTES);
+        aod.m14444g(1, "gads:nativeads:pub_image_scale_type:enabled", bool);
+        aod.m14444g(1, "gads:offline_signaling:enabled", bool2);
+        aod.m14446j("gads:offline_signaling:log_maximum", 100);
+        aod.m14444g(1, "gads:nativeads:template_signal:enabled", bool);
+        aod.m14444g(1, "gads:nativeads:media_content_aspect_ratio:enabled", bool);
+        aod.m14444g(1, "gads:nativeads:media_content_metadata:enabled", bool);
+        aod.m14444g(1, "gads:predictive_prefetch_from_cld:enabled", bool2);
+        aod.m14444g(1, "gads:precache_pool:verbose_logging", bool2);
+        aod.m14446j("gads:rewarded_precache_pool:count", 0);
+        aod.m14446j("gads:interstitial_precache_pool:count", 0);
+        aod.m14448l("gads:rewarded_precache_pool:discard_strategy", "lru");
+        aod.m14448l("gads:interstitial_precache_pool:discard_strategy", "lru");
+        aod.m14448l("gads:rewarded_precache_pool:cache_start_trigger", "onAdClosed");
+        aod.m14448l("gads:interstitial_precache_pool:cache_start_trigger", "onAdClosed");
+        aod.m14446j("gads:rewarded_precache_pool:size", 1);
+        aod.m14446j("gads:interstitial_precache_pool:size", 1);
+        aod.m14446j("gads:rewarded_precache_pool:ad_time_limit", IronSourceConstants.RV_INSTANCE_LOAD_FAILED);
+        aod.m14446j("gads:interstitial_precache_pool:ad_time_limit", IronSourceConstants.RV_INSTANCE_LOAD_FAILED);
+        aod.m14448l("gads:rewarded_precache_pool:schema", "customTargeting,npa,tagForChildDirectedTreatment,tagForUnderAgeOfConsent,maxAdContentRating");
+        aod.m14448l("gads:interstitial_precache_pool:schema", "customTargeting,npa,tagForChildDirectedTreatment,tagForUnderAgeOfConsent,maxAdContentRating");
+        aod.m14448l("gads:app_open_precache_pool:schema", "orientation,npa,tagForChildDirectedTreatment,tagForUnderAgeOfConsent,maxAdContentRating");
+        aod.m14448l("gads:app_open_precache_pool:discard_strategy", "oldest");
+        aod.m14446j("gads:app_open_precache_pool:count", 0);
+        aod.m14448l("gads:app_open_precache_pool:cache_start_trigger", "onAdClosed");
+        aod.m14446j("gads:app_open_precache_pool:size", 1);
+        aod.m14446j("gads:app_open_precache_pool:ad_time_limit", 14400);
+        aod.m14444g(1, "gads:memory_leak:b129558083", bool2);
+        aod.m14444g(1, "gads:unhandled_event_reporting:enabled", bool2);
+        aod.m14444g(1, "gads:response_info:enabled", bool);
+        aod.m14444g(1, "gads:csi:interstitial_failed_to_show:enabled", bool2);
+        aod.m14444g(1, "gads:csi:mediation_failure:enabled", bool2);
+        aod.m14448l("gads:csi:error_parsing:regex", "^(\\d+)");
+        aod.m14444g(1, "gads:csi:eids_from_cld:enabled", bool2);
+        aod.m14444g(1, "gads:request_id_check:enabled", bool2);
+        aod.m14444g(1, "gads:request_id_int32:enabled", bool);
+        aod.m14444g(1, "gads:signal_collection_without_rendering:enabled", bool);
+        aod.m14446j("gads:native_ads_signal:timeout", 1000);
+        aod.m14444g(2, "DISABLE_CRASH_REPORTING", bool2);
+        aod.m14444g(1, "gads:paid_event_listener:enabled", bool);
+        aod.m14444g(1, "gads:interscroller_ad:enabled", bool);
+        aod.m14444g(1, "gads:interscroller_ad:refresh:enabled", bool2);
+        aod.m14446j("gads:interscroller:min_width", 300);
+        aod.m14446j("gads:interscroller:min_height", IronSourceConstants.INTERSTITIAL_DAILY_CAPPED);
+        aod.m14444g(1, "gads:is_in_scroll_view_new_api:enabled", bool);
+        aod.m14444g(1, "gads:policy_validator_for_all_pubs:enabled", bool2);
+        aod.m14448l("gad:publisher_testing:policy_validator:enabled_list", "");
+        aod.m14446j("gads:policy_validator_layoutparam:flags", 808);
+        aod.m14444g(2, "NATIVE_AD_DEBUGGER_ENABLED", bool);
+        aod.m14446j("gads:policy_validator_overlay_width:dp", 350);
+        aod.m14446j("gads:policy_validator_overlay_height:dp", IronSourceConstants.USING_CACHE_FOR_INIT_EVENT);
+        aod.m14444g(1, "gads:use_wide_viewport:enabled", bool2);
+        aod.m14444g(1, "gads:load_with_overview_mode:enabled", bool2);
+        aod.m14444g(1, "gads:wire_banner_listener_after_request:enabled", bool2);
+        aod.m14444g(1, "gads:wire_app_open_listener_after_request:enabled", bool2);
+        aod.m14444g(1, "gads:wire_interstitial_listener_after_request:enabled", bool2);
+        aod.m14448l("gads:server_transaction_source:list", "Network");
+        aod.m14444g(1, "gads:can_open_app_and_open_app_action:enabled", bool2);
+        aod.m14444g(1, "gads:open_gmsg:set_uri_data_and_type:enabled", bool2);
+        aod.m14446j("gads:ad_error_api:min_version", 202006000);
+        aod.m14444g(1, "gads:forward_bow_error_string:enabled", bool);
+        aod.m14444g(1, "gads:continue_on_process_response:enabled", bool2);
+        aod.m14444g(1, "gads:mediation_status_reporting:enabled", bool);
+        aod.m14446j("gads:mediation_no_fill_error:min_version", 999999999);
+        aod.m14446j("gads:offline_database_version:version", 1);
+        aod.m14444g(1, "gads:offline_ads_notification:enabled", bool);
+        aod.m14444g(1, "gads:use_new_network_api:enabled", bool);
+        aod.m14444g(1, "gads:handle_click_recorded_event:enabled", bool2);
+        aod.m14444g(1, "gads:default_network_type_fine_to_unknown:enabled", bool);
+        aod.m14444g(1, "gads:handle_intent_async:enabled", bool2);
+        aod.m14444g(1, "gads:skip_deep_link_validation_native_ads:enabled", bool2);
+        aod.m14444g(1, "gads:try_deep_link_fallback_native_ads:enabled", bool2);
+        aod.m14444g(1, "gads:in_app_link_handling_for_android_11_enabled:enabled", bool2);
+        aod.m14444g(1, "gads:new_remote_logging_utils:enabled", bool2);
+        aod.m14444g(1, "gads:remote_logging:enabled", bool2);
+        aod.m14446j("gads:remote_log_send_rate_ms", 60000);
+        aod.m14446j("gads:remote_log_queue_max_entries", 500);
+        aod.m14446j("gads:app_event_queue_size", 20);
+        aod.m14444g(1, "gads:hide_grey_title_bar:enabled", bool2);
+        aod.m14444g(1, "gads:interstitial_ad_parameter_handler:enabled", bool2);
+        aod.m14444g(1, "gads:inspector:enabled", bool);
+        aod.m14448l("gads:inspector:ui_url", "https://admob-gmats.uc.r.appspot.com/");
+        aod.m14446j("gads:inspector:max_ad_life_cycles", 1000);
+        aod.m14446j("gads:inspector:ui_invocation_millis", 2000);
+        aod.m14444g(1, "gads:inspector:shake_enabled", bool);
+        aod.m14445i("gads:inspector:shake_strength", 2.0f);
+        aod.m14446j("gads:inspector:shake_interval", 500);
+        aod.m14446j("gads:inspector:shake_reset_time_ms", 3000);
+        aod.m14446j("gads:inspector:shake_count", 3);
+        aod.m14444g(1, "gads:inspector:flick_enabled", bool);
+        aod.m14445i("gads:inspector:flick_rotation_threshold", 45.0f);
+        aod.m14446j("gads:inspector:flick_reset_time_ms", 3000);
+        aod.m14446j("gads:inspector:flick_count", 2);
+        aod.m14446j("gads:inspector:icon_width_px", 256);
+        aod.m14446j("gads:inspector:icon_height_px", 256);
+        aod.m14444g(1, "gads:paw_register_webview:enabled", bool);
+        aod.m14444g(1, "gads:h5ads:enabled", bool);
+        aod.m14446j("gads:h5ads:max_num_ad_objects", 10);
+        aod.m14446j("gads:h5ads:max_gmsg_length", 5000);
+        aod.m14448l("gads:h5ads:afma_prefix", "(window.AFMA_ReceiveMessage || window.h5_iframe.contentWindow.AFMA_ReceiveMessage || function() {})");
+        aod.m14444g(1, "gads:native_html_video_asset:enabled", bool2);
+        aod.m14444g(1, "gads:leibniz:events:enabled", bool2);
+        aod.m14444g(1, "gads:msa:alphavis_enabled", bool2);
+        aod.m14444g(1, "gads:msa:nativealphavis_enabled", bool2);
+        aod.m14446j("gads:msa:visminalpha", 90);
+    }
+
+    /* renamed from: a */
+    public static void m14468a(Context context) {
+        aol.m14469a(new aoj(context));
+    }
+}

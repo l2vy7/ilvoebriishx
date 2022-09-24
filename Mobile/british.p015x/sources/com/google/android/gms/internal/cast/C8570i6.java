@@ -1,0 +1,45 @@
+package com.google.android.gms.internal.cast;
+
+/* renamed from: com.google.android.gms.internal.cast.i6 */
+/* compiled from: com.google.android.gms:play-services-cast@@20.0.0 */
+public enum C8570i6 implements C8736sc {
+    REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_UNKNOWN(0),
+    REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_USER_DISMISSED(1),
+    REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_USER_STOPPED(2),
+    REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_RECEIVER_OFFLINE(3),
+    REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_SENDER_BECAME_PRIMARY(4),
+    REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_RECEIVER_PRIVATE_MODE(5),
+    REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_USER_DISABLE_FROM_SETTINGS(6),
+    REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_CONNECTION_TO_GMSCORE_FAILED(7),
+    REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_CONNECTION_TO_RECEIVER_FAILED(8),
+    REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_NEW_SERVICE_STARTED(9),
+    REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_INVALID_APPLICATION(10),
+    REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_APPLICATION_DISCONNECTED(11),
+    REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_NO_MEDIA_SESSION(12),
+    REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_SERVICE_STOPPED(13),
+    REMOTE_CONTROL_NOTIFICATION_CANCEL_SCEEN_OFF(14);
+    
+
+    /* renamed from: r */
+    private static final C8751tc<C8570i6> f43551r = null;
+
+    /* renamed from: b */
+    private final int f43553b;
+
+    static {
+        f43551r = new C8536g6();
+    }
+
+    private C8570i6(int i) {
+        this.f43553b = i;
+    }
+
+    /* renamed from: d */
+    public static C8766uc m41000d() {
+        return C8553h6.f43515a;
+    }
+
+    public final String toString() {
+        return "<" + C8570i6.class.getName() + '@' + Integer.toHexString(System.identityHashCode(this)) + " number=" + this.f43553b + " name=" + name() + '>';
+    }
+}

@@ -1,0 +1,19 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@20.6.0 */
+public final /* synthetic */ class o52 implements hb1 {
+
+    /* renamed from: b */
+    public final /* synthetic */ xt0 f36282b;
+
+    public /* synthetic */ o52(xt0 xt0) {
+        this.f36282b = xt0;
+    }
+
+    public final void zzl() {
+        xt0 xt0 = this.f36282b;
+        if (xt0.mo18793u0() != null) {
+            xt0.mo18793u0().zzp();
+        }
+    }
+}
