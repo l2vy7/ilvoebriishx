@@ -1,0 +1,24 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.concurrent.Executor;
+
+/* compiled from: com.google.android.gms:play-services-ads@@20.6.0 */
+public final class j81 implements uu3<yh1<cc1>> {
+
+    /* renamed from: a */
+    private final iv3<i21> f33802a;
+
+    /* renamed from: b */
+    private final iv3<Executor> f33803b;
+
+    public j81(iv3<i21> iv3, iv3<Executor> iv32) {
+        this.f33802a = iv3;
+        this.f33803b = iv32;
+    }
+
+    public final /* bridge */ /* synthetic */ Object zzb() {
+        nb3 nb3 = po0.f37722a;
+        cv3.m31156b(nb3);
+        return new yh1(this.f33802a.zzb(), nb3);
+    }
+}

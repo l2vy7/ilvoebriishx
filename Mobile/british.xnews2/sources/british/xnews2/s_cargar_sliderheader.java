@@ -1,0 +1,92 @@
+package british.xnews2;
+
+import android.app.IntentService;
+import android.graphics.Bitmap;
+
+public class s_cargar_sliderheader extends IntentService {
+
+    /* renamed from: b */
+    C1692config f8478b;
+
+    /* renamed from: c */
+    Bitmap f8479c;
+
+    public s_cargar_sliderheader() {
+        super("s_cargar_sliderheader");
+    }
+
+    /* access modifiers changed from: protected */
+    /* JADX WARNING: No exception handlers in catch block: Catch:{  } */
+    /* Code decompiled incorrectly, please refer to instructions dump. */
+    public void onHandleIntent(android.content.Intent r6) {
+        /*
+            r5 = this;
+            android.content.Context r6 = r5.getApplicationContext()
+            british.xnews2.config r6 = (british.xnews2.C1692config) r6
+            r5.f8478b = r6
+            java.lang.StringBuilder r6 = new java.lang.StringBuilder
+            r6.<init>()
+            java.lang.String r0 = british.xnews2.C1692config.f7108H5
+            r6.append(r0)
+            java.lang.String r0 = "/srv/imgs/gen/"
+            r6.append(r0)
+            r0 = 2260177(0x227cd1, float:3.167183E-39)
+            r6.append(r0)
+            java.lang.String r0 = "_slider.png?v="
+            r6.append(r0)
+            british.xnews2.config r0 = r5.f8478b
+            int r0 = r0.f7450x
+            r6.append(r0)
+            java.lang.String r6 = r6.toString()
+            r0 = 1
+            r1 = 0
+            java.net.URL r2 = new java.net.URL     // Catch:{ MalformedURLException -> 0x0036 }
+            r2.<init>(r6)     // Catch:{ MalformedURLException -> 0x0036 }
+            r6 = 1
+            goto L_0x0038
+        L_0x0036:
+            r2 = 0
+            r6 = 0
+        L_0x0038:
+            if (r6 == 0) goto L_0x008e
+            java.net.URLConnection r2 = r2.openConnection()     // Catch:{ IOException -> 0x006d }
+            java.net.HttpURLConnection r2 = (java.net.HttpURLConnection) r2     // Catch:{ IOException -> 0x006d }
+            r2.setDoInput(r0)     // Catch:{ IOException -> 0x006d }
+            r0 = 5000(0x1388, float:7.006E-42)
+            r2.setConnectTimeout(r0)     // Catch:{ IOException -> 0x006d }
+            r0 = 7000(0x1b58, float:9.809E-42)
+            r2.setReadTimeout(r0)     // Catch:{ IOException -> 0x006d }
+            r2.connect()     // Catch:{ IOException -> 0x006d }
+            java.io.InputStream r0 = r2.getInputStream()     // Catch:{ IOException -> 0x006d }
+            android.graphics.Bitmap r0 = android.graphics.BitmapFactory.decodeStream(r0)     // Catch:{ IOException -> 0x006d }
+            r5.f8479c = r0     // Catch:{ IOException -> 0x006d }
+            java.lang.String r0 = "slider_header"
+            java.io.FileOutputStream r0 = r5.openFileOutput(r0, r1)     // Catch:{  }
+            android.graphics.Bitmap r2 = r5.f8479c     // Catch:{  }
+            android.graphics.Bitmap$CompressFormat r3 = android.graphics.Bitmap.CompressFormat.PNG     // Catch:{  }
+            r4 = 100
+            r2.compress(r3, r4, r0)     // Catch:{  }
+            r0.close()     // Catch:{  }
+            goto L_0x006e
+        L_0x006d:
+            r6 = 0
+        L_0x006e:
+            british.xnews2.config r0 = r5.f8478b
+            if (r0 == 0) goto L_0x008e
+            java.lang.String r0 = r0.f7313c1
+            if (r0 == 0) goto L_0x008e
+            if (r6 == 0) goto L_0x008e
+            java.lang.String r6 = "sh"
+            android.content.SharedPreferences r6 = r5.getSharedPreferences(r6, r1)
+            android.content.SharedPreferences$Editor r6 = r6.edit()
+            british.xnews2.config r0 = r5.f8478b
+            int r0 = r0.f7450x
+            java.lang.String r1 = "slider_v_act"
+            r6.putInt(r1, r0)
+            r6.commit()
+        L_0x008e:
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: british.xnews2.s_cargar_sliderheader.onHandleIntent(android.content.Intent):void");
+    }
+}
